@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    height: 100vh;
+    background-color: #fafafa;
+    grid-template-rows: 125px 1fr 125px;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-color: aqua;
+    display: flex;
+}
+
+h1{
+    color: #dd4444;
+}

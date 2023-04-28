@@ -12,11 +12,108 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+/* HEADER */
+
 header{
-    background-color: aqua;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
 }
 
+/* TÍTULO */
+
 h1{
-    color: #dd4444;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 32px;
+    letter-spacing: 0.05em;
+    color: #DD4444;
+}
+
+/* CONTAINER DA DIREITA */
+
+.container__direita{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-right: 30px;
+}
+
+/* ESTILIZAÇÃO FAIXA DE OPÇÕES */
+
+.options{
+    display: flex;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 32px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    gap: 20px;
+}
+
+/* ESTILIZAÇÃO ÍCONES */
+
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+img[alt~=icons]{
+    width: 25px;
+}
+
+/* ESTILIZAÇÃO BOTÃO */
+
+.button{
+    background-color: #DD4444;
+    width: 143px;
+    height: 50px;
+    border-radius: 15px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.05em;
+}
+
+/* ESTILIZAÇÃO IMAGEM DE FUNDO */
+
+img[alt~=fundo]{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+/* main{
+    display: flex;
+    flex-direction: column;
+}
+
+.headline{
+    background-color: mediumblue;
+}
+
+.subtitle{
+    background-color: magenta;
+}
+
+.buttons{
+    background-color: lime;
+} */
+
+/* ESTILIZAÇÃO FOOTER */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #285a5f;
 }

@@ -92,22 +92,46 @@ img[alt~=fundo]{
     z-index: -1;
 }
 
-/* main{
+main{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+    width: 40%;
 }
 
 .headline{
     background-color: mediumblue;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3em;
+    line-height: 32px;
+    letter-spacing: 0.05em;
+    color: #DD4444;
 }
 
 .subtitle{
     background-color: magenta;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.25em;
+    line-height: 32px;
+    letter-spacing: 0.05em;
 }
 
 .buttons{
     background-color: lime;
-} */
+    display: flex;
+    gap: 42px;
+}
+
+img[alt~=salada]{
+    position: absolute;
+    width: 731px;
+    top: 25%;
+}
 
 /* ESTILIZAÇÃO FOOTER */
 

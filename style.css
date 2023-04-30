@@ -35,7 +35,7 @@ h1{
 
 /* CONTAINER DA DIREITA */
 
-.container__direita{
+.information__container{
     display: flex;
     align-items: center;
     gap: 25px;
@@ -54,6 +54,25 @@ h1{
     gap: 20px;
 }
 
+.option::after{
+    content: '';
+    display: block;
+    width: auto;
+    height: 4px;
+    background-color: #DD4444;
+    border-radius: 10px;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.option:hover::after{
+    opacity: 1;
+}
+
+.option:hover{
+    cursor: pointer;
+}
+
 /* ESTILIZAÇÃO ÍCONES */
 
 .icons{
@@ -66,12 +85,76 @@ img[alt~=icons]{
     width: 25px;
 }
 
-/* ESTILIZAÇÃO BOTÃO */
+.icons:hover{
+    cursor: pointer;
+}
+
+/* ESTILIZAÇÃO DO BOTÃO SUPERIOR */
+
+#button__top{
+    width: 143px;
+    height: 50px;
+}
+
+#button__top:hover{
+    background-color: #DD4444;
+    color: white;
+}
+
+/* ESTILIZAÇÃO IMAGEM DE FUNDO */
+
+img[alt~=background]{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+/* ESTILIZAÇÃO DO LAYOUT PRINCIPAL */
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding-left: 100px;
+    width: 48%;
+}
+
+/* ESTILIZAÇÃO DO TÍTULO */
+
+.headline{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3em;
+    line-height: 102px;
+    letter-spacing: 0.05em;
+    color: #DD4444;
+}
+
+/* ESTILIZAÇÃO DO SUBTÍTULO */
+
+.subtitle{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.25em;
+    line-height: 37px;
+    letter-spacing: 0.05em;
+}
+
+/* ESTILIZAÇÃO DOS BOTÕES */
+
+.buttons{
+    display: flex;
+    gap: 42px;
+}
 
 .button{
     background-color: #DD4444;
-    width: 143px;
-    height: 50px;
+    width: 195px;
+    height: 54px;
     border-radius: 15px;
     display: grid;
     align-items: center;
@@ -83,54 +166,38 @@ img[alt~=icons]{
     letter-spacing: 0.05em;
 }
 
-/* ESTILIZAÇÃO IMAGEM DE FUNDO */
-
-img[alt~=fundo]{
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -1;
-}
-
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 100px;
-    width: 40%;
-}
-
-.headline{
-    background-color: mediumblue;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 3em;
-    line-height: 32px;
-    letter-spacing: 0.05em;
+.button:hover{
+    background-color: #fafafa;
     color: #DD4444;
+    border: solid;
+    border-color: #DD4444;
+    cursor: pointer;
 }
 
-.subtitle{
-    background-color: magenta;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 1.25em;
-    line-height: 32px;
-    letter-spacing: 0.05em;
+#green{
+    background-color: #285a5f;
 }
 
-.buttons{
-    background-color: lime;
-    display: flex;
-    gap: 42px;
+#green:hover{
+    background-color: #fafafa;
+    color: #285a5f;
+    border: solid;
+    border-color: #285a5f;
+    cursor: pointer;
 }
 
-img[alt~=salada]{
+/* ESTILIZAÇÃO DA SALADA */
+
+img[alt~=salad]{
     position: absolute;
-    width: 731px;
-    top: 25%;
+    width: 578px;
+    top: 200px;
+    right: 140px; 
+}
+
+img[alt~=salad]:hover{
+    transform: scale(1.1);
+    animation-duration: 1s
 }
 
 /* ESTILIZAÇÃO FOOTER */

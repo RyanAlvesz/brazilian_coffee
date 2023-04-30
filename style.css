@@ -21,7 +21,7 @@ header{
     padding-left: 100px;
 }
 
-/* TÍTULO */
+/* MARCA (BRAZILIAN COFFEE) */
 
 h1{
     font-family: 'Poppins';
@@ -33,7 +33,7 @@ h1{
     color: #DD4444;
 }
 
-/* CONTAINER DA DIREITA */
+/* CONTAINER DE INFORMAÇÕES */
 
 .information__container{
     display: flex;
@@ -54,15 +54,17 @@ h1{
     gap: 20px;
 }
 
+/* ANIMAÇÃO DAS OPÇÕES */
+
 .option::after{
     content: '';
     display: block;
     width: auto;
-    height: 4px;
+    height: 2px;
     background-color: #DD4444;
     border-radius: 10px;
     opacity: 0;
-    transition-duration: 0.3s;
+    transition-duration: 0.4s;
 }
 
 .option:hover::after{
@@ -99,6 +101,7 @@ img[alt~=icons]{
 #button__top:hover{
     background-color: #DD4444;
     color: white;
+    transform: scale(1.1);
 }
 
 /* ESTILIZAÇÃO IMAGEM DE FUNDO */
@@ -144,12 +147,14 @@ main{
     letter-spacing: 0.05em;
 }
 
-/* ESTILIZAÇÃO DOS BOTÕES */
+/* ESTILIZAÇÃO DO CONTAINER DOS BOTÕES */
 
 .buttons{
     display: flex;
     gap: 42px;
 }
+
+/* ESTILIZAÇÃO DOS BOTÕES */
 
 .button{
     background-color: #DD4444;
@@ -190,14 +195,9 @@ main{
 
 img[alt~=salad]{
     position: absolute;
-    width: 578px;
-    top: 200px;
-    right: 140px; 
-}
-
-img[alt~=salad]:hover{
-    transform: scale(1.1);
-    animation-duration: 1s
+    width: 600px;
+    top: 18%;
+    left: 52%; 
 }
 
 /* ESTILIZAÇÃO FOOTER */

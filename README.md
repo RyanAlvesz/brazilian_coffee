@@ -1,4 +1,4 @@
-# BRAZILIAN COFFEE LANDING PAGE ☕
+# BRAZILIAN COFFEE ☕
 
 ![web_version](https://user-images.githubusercontent.com/123594568/235998484-68ec7efe-466e-4a80-924f-b994ad8be010.png)
 

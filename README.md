@@ -1,5 +1,5 @@
 # brazilian_coffee
 ##
 *
-- [ ]
-- [x]
+-[ ]
+-[x]

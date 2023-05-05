@@ -87,9 +87,6 @@ img[alt~=icons]{
     width: 25px;
 }
 
-.icons:hover{
-    cursor: pointer;
-}
 
 /* ESTILIZAÇÃO DO BOTÃO SUPERIOR */
 
@@ -154,6 +151,12 @@ main{
     gap: 42px;
 }
 
+/* BARRA DE NAGEAÇÃO (3 BARRINHAS) */
+
+.navbar{
+    display: none;
+}
+
 /* ESTILIZAÇÃO DOS BOTÕES */
 
 .button{
@@ -195,7 +198,7 @@ main{
 
 img[alt~=salad]{
     position: absolute;
-    width: 600px;
+    width: 37.5em;
     top: 18%;
     left: 52%; 
 }
@@ -207,4 +210,163 @@ footer{
     justify-content: center;
     align-items: center;
     color: #285a5f;
+}
+
+@media (max-width: 1024px){
+
+    body{
+        grid-template-rows: 90px 1fr 96px;
+    }
+
+    header{
+        padding-left: 2em;
+    }
+
+
+    h1{
+        font-size: 1em;
+    }
+
+    .options{
+        display: none;
+    }
+
+    .icons{
+        gap: 10px;
+    }
+
+    img[alt~=icons]{
+        width: 20px;
+    }
+
+    #button__top{
+        width: 120px;
+        height: 46px;
+        font-size: 0.9em;
+    }
+
+    img[alt~=background]{
+        width: 450px;
+    }    
+
+    .navbar{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .barra{
+        background-color: white;
+        width: 44px;
+        height: 3px;
+        border-radius: 15px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+        place-self: end center;
+    }
+
+    img[alt~=salad]{
+        position: relative;
+        width: 23em;
+        left: initial;
+    }
+
+    .headline{
+        text-align: center;
+        font-size: 3em;
+        line-height: 80px;
+    }
+
+    .subtitle{
+        text-align: center;
+        font-size: 1.25em;
+        line-height: 40px;
+        letter-spacing: 0.05em;
+        width: 80%;
+    }
+
+}
+
+@media (max-width:767px){
+
+    body{
+        grid-template-rows: 54px 1fr 80px;
+    }
+
+    .icons{
+        display: none;
+    }
+
+    h1{
+        font-size: 0.7em;
+    }
+
+    img[alt~=background]{
+        width: 14em;
+    }   
+
+    img[alt~=salad]{
+        position: relative;
+        width: 12.5em;
+        left: initial;
+    }
+
+    #button__top{
+        width: 82px;
+        height: 26px;
+        font-size: 0.5em;
+        border-radius: 5px;
+    }
+
+    .information__container{
+        gap: 12px;
+    }
+
+    .navbar{
+        gap: 6px;
+    }
+
+    .barra{
+        background-color: white;
+        width: 24px;
+        height: 2px;
+        border-radius: 15px;
+    }
+
+    .headline{
+        text-align: center;
+        font-size: 1.5em;
+        line-height: 40px;
+    }
+
+    main{
+        width: 80%;
+        place-self: center;
+    }
+
+    .subtitle{
+        display: none;
+    }
+
+    .buttons{
+        flex-direction: column;
+        gap: 12px; 
+    }
+
+    .button{
+        width: 248px;
+        height: 50px;
+        border-radius: 10px;
+    }
+
 }

@@ -198,7 +198,7 @@ main{
 
 img[alt~=salad]{
     position: absolute;
-    width: 37.5em;
+    width: 32rem;
     top: 18%;
     left: 52%; 
 }
@@ -303,12 +303,16 @@ footer{
         grid-template-rows: 54px 1fr 80px;
     }
 
+    header{
+        padding-top: 25px;
+    }
+
     .icons{
         display: none;
     }
 
     h1{
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
 
     img[alt~=background]{
@@ -322,9 +326,9 @@ footer{
     }
 
     #button__top{
-        width: 82px;
-        height: 26px;
-        font-size: 0.5em;
+        width: 96px;
+        height: 32px;
+        font-size: 0.7em;
         border-radius: 5px;
     }
 
@@ -351,7 +355,7 @@ footer{
 
     main{
         width: 80%;
-        place-self: center;
+        place-self: center center;
     }
 
     .subtitle{

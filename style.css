@@ -83,8 +83,13 @@ h1{
     gap: 15px;
 }
 
-img[alt~=icons]{
+svg[alt~=icons]{
     width: 25px;
+}
+
+svg:hover path{
+    stroke: #DD4444;
+    cursor: pointer;
 }
 
 
@@ -98,7 +103,6 @@ img[alt~=icons]{
 #button__top:hover{
     background-color: #DD4444;
     color: white;
-    transform: scale(1.1);
 }
 
 /* ESTILIZAÇÃO IMAGEM DE FUNDO */
@@ -172,6 +176,7 @@ main{
     font-size: 18px;
     line-height: 32px;
     letter-spacing: 0.05em;
+    transition: 0.2s;
 }
 
 .button:hover{
@@ -180,6 +185,7 @@ main{
     border: solid;
     border-color: #DD4444;
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 #green{
@@ -222,18 +228,25 @@ footer{
         grid-template-rows: 90px 1fr 96px;
     }
 
+    /* ESTILIZAÇÃO HEADER */
+
     header{
         padding-left: 2em;
     }
 
+    /* ESTILIZAÇÃO LOGO */
 
     h1{
         font-size: 1em;
     }
 
+    /* REMOVENDO OPÇÕES */
+
     .options{
         display: none;
     }
+
+    /*  ESTILIZAÇÃO ÍCONES */
 
     .icons{
         gap: 10px;
@@ -243,15 +256,21 @@ footer{
         width: 20px;
     }
 
+    /* ESTILIZAÇÃO DO BOTÃO SUPERIOR */
+
     #button__top{
         width: 120px;
         height: 46px;
         font-size: 0.9em;
     }
 
+    /* ESTILIZAÇÃO DO FUNDO */
+
     img[alt~=background]{
         width: 450px;
     }    
+
+    /* ESTILIZAÇÃO DA BARRA DE NAVEGAÇÃO */
 
     .navbar{
         display: grid;
@@ -267,6 +286,8 @@ footer{
         border-radius: 15px;
     }
 
+    /* ESTILIZAÇÃO LAYOUT PRINCIPAL */
+
     main{
         display: flex;
         flex-direction: column;
@@ -279,11 +300,15 @@ footer{
         place-self: end center;
     }
 
+    /* ESTILIZAÇÃO SALADA */
+
     img[alt~=salad]{
         position: static;
         width: 23em;
         place-self: center center;
     }
+
+    /* ESTILIZAÇÃO TÍTULO E SUBTÍTULO */
 
     .headline{
         text-align: center;
@@ -311,26 +336,38 @@ footer{
     body{
         grid-template-rows: 54px 1fr 48px;
     }
+    
+    /* ESTILIZAÇÃO DO HEADER */
 
     header{
         padding: 25px 12px 0 12px;
     }
 
+    /* REMOÇÃO DOS ÍCONES */
+
     .icons{
         display: none;
     }
+
+    /* ESTILIZAÇÃO LOGO */
 
     h1{
         font-size: 12px;
     }
 
+    /* ESTILIZAÇÃO FUNDO */
+
     img[alt~=background]{
         width: 200px;
     }
 
+    /* ESTILIZAÇÃO SALADA */
+
     img[alt~=salad]{
         width: 12.5em;
     }
+
+    /* ESTILIZAÇÃO BOTÃO SUPERIOR */
 
     #button__top{
         width: 84px;
@@ -343,6 +380,8 @@ footer{
     #button_top:hover{
         transform: scale(0);
     }
+
+    /* ESTILIZAÇÃO BARRA DE NAVEGAÇÃO */
 
     .information__container{
         gap: 12px;
@@ -360,6 +399,8 @@ footer{
         border-radius: 15px;
     }
 
+    /* ESTILIZAÇÃO TÍTULO E SUBTÍTULO */
+
     .headline{
         text-align: center;
         font-size: 22px;
@@ -375,6 +416,8 @@ footer{
     .subtitle{
         display: none;
     }
+
+    /* ESTILIZAÇÃO BOTÕES */
 
     .buttons{
         flex-direction: column;

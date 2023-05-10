@@ -1,6 +1,8 @@
 # BRAZILIAN COFFEE ☕
 
 ![web_version](https://user-images.githubusercontent.com/123594568/235998484-68ec7efe-466e-4a80-924f-b994ad8be010.png)
+![image](https://github.com/RyanAlvesz/brazilian_coffee/assets/123594568/9941b440-cacc-4591-8ea2-b06d1756f5de)
+![image](https://github.com/RyanAlvesz/brazilian_coffee/assets/123594568/6d74a1ce-896c-47a0-aecc-e6a5bbb747c7)
 
 > Web Site fundamentado em construção no Figma.
 

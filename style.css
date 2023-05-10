@@ -199,8 +199,8 @@ main{
 img[alt~=salad]{
     position: absolute;
     width: 32rem;
-    top: 18%;
-    left: 52%; 
+    top: 22%;
+    right: 12%; 
 }
 
 /* ESTILIZAÇÃO FOOTER */
@@ -211,6 +211,10 @@ footer{
     align-items: center;
     color: #285a5f;
 }
+
+
+/* RESPONSIVIDADE TABLET */
+
 
 @media (max-width: 1024px){
 
@@ -276,9 +280,9 @@ footer{
     }
 
     img[alt~=salad]{
-        position: relative;
+        position: static;
         width: 23em;
-        left: initial;
+        place-self: center center;
     }
 
     .headline{
@@ -297,14 +301,19 @@ footer{
 
 }
 
-@media (max-width:767px){
+
+
+/* RESPONSIVIDADE CELULAR */
+
+
+@media (max-width: 767px){
 
     body{
-        grid-template-rows: 54px 1fr 80px;
+        grid-template-rows: 54px 1fr 48px;
     }
 
     header{
-        padding-top: 25px;
+        padding: 25px 12px 0 12px;
     }
 
     .icons{
@@ -312,28 +321,32 @@ footer{
     }
 
     h1{
-        font-size: 0.8em;
+        font-size: 12px;
     }
 
     img[alt~=background]{
-        width: 14em;
-    }   
+        width: 200px;
+    }
 
     img[alt~=salad]{
-        position: relative;
         width: 12.5em;
-        left: initial;
     }
 
     #button__top{
-        width: 96px;
-        height: 32px;
-        font-size: 0.7em;
+        width: 84px;
+        height: 22px;
+        font-size: 10px;
         border-radius: 5px;
+        line-height: 10px;
+    }
+
+    #button_top:hover{
+        transform: scale(0);
     }
 
     .information__container{
         gap: 12px;
+        padding-right: 0;
     }
 
     .navbar{
@@ -349,13 +362,14 @@ footer{
 
     .headline{
         text-align: center;
-        font-size: 1.5em;
+        font-size: 22px;
         line-height: 40px;
     }
 
     main{
-        width: 80%;
+        width: 90%;
         place-self: center center;
+        gap: 10px;
     }
 
     .subtitle{

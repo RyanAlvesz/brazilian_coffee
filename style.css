@@ -1,3 +1,5 @@
+/* RESET DE PÁGINA */
+
 *{
     margin: 0;
     padding: 0;
@@ -89,9 +91,11 @@ svg[alt~=icons]{
 
 svg:hover path{
     stroke: #DD4444;
-    cursor: pointer;
 }
 
+svg:hover{
+    cursor: pointer;
+}
 
 /* ESTILIZAÇÃO DO BOTÃO SUPERIOR */
 
@@ -120,7 +124,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 40px;
+    gap: 2.5em;
     padding-left: 100px;
     width: 48%;
 }
@@ -204,7 +208,7 @@ main{
 
 img[alt~=salad]{
     position: absolute;
-    width: 32rem;
+    width: 32em;
     top: 22%;
     right: 12%; 
 }
@@ -325,7 +329,6 @@ footer{
     }
 
 }
-
 
 
 /* RESPONSIVIDADE CELULAR */

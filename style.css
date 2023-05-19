@@ -1,12 +1,12 @@
 /* RESET DE PÁGINA */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     display: grid;
     height: 100vh;
     background-color: #fafafa;
@@ -14,18 +14,20 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+
 /* HEADER */
 
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 100px;
 }
 
+
 /* MARCA (BRAZILIAN COFFEE) */
 
-h1{
+h1 {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -35,18 +37,20 @@ h1{
     color: #DD4444;
 }
 
+
 /* CONTAINER DE INFORMAÇÕES */
 
-.information__container{
+.information__container {
     display: flex;
     align-items: center;
     gap: 25px;
     padding-right: 30px;
 }
 
+
 /* ESTILIZAÇÃO FAIXA DE OPÇÕES */
 
-.options{
+.options {
     display: flex;
     font-weight: 600;
     font-size: 1em;
@@ -56,9 +60,10 @@ h1{
     gap: 20px;
 }
 
+
 /* ANIMAÇÃO DAS OPÇÕES */
 
-.option::after{
+.option::after {
     content: '';
     display: block;
     width: auto;
@@ -69,58 +74,62 @@ h1{
     transition-duration: 0.4s;
 }
 
-.option:hover::after{
+.option:hover::after {
     opacity: 1;
 }
 
-.option:hover{
+.option:hover {
     cursor: pointer;
 }
 
+
 /* ESTILIZAÇÃO ÍCONES */
 
-.icons{
+.icons {
     display: flex;
     justify-content: center;
     gap: 15px;
 }
 
-svg[alt~=icons]{
+svg[alt~=icons] {
     width: 25px;
 }
 
-svg:hover path{
+svg:hover path {
     stroke: #DD4444;
 }
 
-svg:hover{
+svg:hover {
     cursor: pointer;
 }
 
+
 /* ESTILIZAÇÃO DO BOTÃO SUPERIOR */
 
-#button__top{
+#button__top {
     width: 143px;
     height: 50px;
 }
 
-#button__top:hover{
+#button__top:hover {
     background-color: #DD4444;
     color: white;
 }
 
+
 /* ESTILIZAÇÃO IMAGEM DE FUNDO */
 
-img[alt~=background]{
+img[alt~=background] {
     position: absolute;
     right: 0;
     top: 0;
     z-index: -1;
 }
 
+
 /* ESTILIZAÇÃO DO LAYOUT PRINCIPAL */
 
-main{
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -129,9 +138,10 @@ main{
     width: 48%;
 }
 
+
 /* ESTILIZAÇÃO DO TÍTULO */
 
-.headline{
+.headline {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -141,9 +151,10 @@ main{
     color: #DD4444;
 }
 
+
 /* ESTILIZAÇÃO DO SUBTÍTULO */
 
-.subtitle{
+.subtitle {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 300;
@@ -152,22 +163,25 @@ main{
     letter-spacing: 0.05em;
 }
 
+
 /* ESTILIZAÇÃO DO CONTAINER DOS BOTÕES */
 
-.buttons{
+.buttons {
     display: flex;
     gap: 42px;
 }
 
+
 /* BARRA DE NAGEAÇÃO (3 BARRINHAS) */
 
-.navbar{
+.navbar {
     display: none;
 }
 
+
 /* ESTILIZAÇÃO DOS BOTÕES */
 
-.button{
+.button {
     background-color: #DD4444;
     width: 195px;
     height: 54px;
@@ -177,13 +191,13 @@ main{
     justify-content: center;
     color: #ffffff;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 32px;
     letter-spacing: 0.05em;
     transition: 0.2s;
 }
 
-.button:hover{
+.button:hover {
     background-color: #fafafa;
     color: #DD4444;
     border: solid;
@@ -192,11 +206,11 @@ main{
     transform: scale(1.1);
 }
 
-#green{
+#green {
     background-color: #285a5f;
 }
 
-#green:hover{
+#green:hover {
     background-color: #fafafa;
     color: #285a5f;
     border: solid;
@@ -204,18 +218,20 @@ main{
     cursor: pointer;
 }
 
+
 /* ESTILIZAÇÃO DA SALADA */
 
-img[alt~=salad]{
+img[alt~=salad] {
     position: absolute;
     width: 32em;
     top: 22%;
-    right: 12%; 
+    right: 12%;
 }
+
 
 /* ESTILIZAÇÃO FOOTER */
 
-footer{
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -225,74 +241,72 @@ footer{
 
 /* RESPONSIVIDADE TABLET */
 
-
-@media (max-width: 1024px){
-
-    body{
+@media (max-width: 1024px) {
+    body {
         grid-template-rows: 90px 1fr 96px;
     }
 
     /* ESTILIZAÇÃO HEADER */
-
-    header{
+    
+    header {
         padding-left: 2em;
     }
-
+    
     /* ESTILIZAÇÃO LOGO */
-
-    h1{
+    
+    h1 {
         font-size: 1em;
     }
-
+    
     /* REMOVENDO OPÇÕES */
-
-    .options{
+    
+    .options {
         display: none;
     }
-
+    
     /*  ESTILIZAÇÃO ÍCONES */
-
-    .icons{
+    
+    .icons {
         gap: 10px;
     }
-
-    img[alt~=icons]{
+    
+    img[alt~=icons] {
         width: 20px;
     }
-
+    
     /* ESTILIZAÇÃO DO BOTÃO SUPERIOR */
-
-    #button__top{
-        width: 120px;
-        height: 46px;
-        font-size: 0.9em;
+    
+    #button__top {
+        width: 130px;
+        height: 45px;
+        font-size: 0.9rem;
     }
-
+    
     /* ESTILIZAÇÃO DO FUNDO */
-
-    img[alt~=background]{
+    
+    img[alt~=background] {
         width: 450px;
-    }    
-
+    }
+    
     /* ESTILIZAÇÃO DA BARRA DE NAVEGAÇÃO */
-
-    .navbar{
+    
+    .navbar {
         display: grid;
         align-items: center;
         justify-content: center;
         gap: 10px;
     }
-
-    .barra{
+    
+    .barra {
         background-color: white;
         width: 44px;
         height: 3px;
         border-radius: 15px;
     }
-
+    
     /* ESTILIZAÇÃO LAYOUT PRINCIPAL */
-
-    main{
+    
+    main {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -301,101 +315,99 @@ footer{
         align-items: center;
         justify-content: center;
         padding-left: 0;
-        place-self: end center;
+        place-self: center;
     }
-
+    
     /* ESTILIZAÇÃO SALADA */
-
-    img[alt~=salad]{
+    
+    img[alt~=salad] {
         position: static;
         width: 23em;
         place-self: center center;
     }
-
+    
     /* ESTILIZAÇÃO TÍTULO E SUBTÍTULO */
-
-    .headline{
+    
+    .headline {
         text-align: center;
         font-size: 3em;
         line-height: 80px;
     }
-
-    .subtitle{
+    
+    .subtitle {
         text-align: center;
         font-size: 1.25em;
         line-height: 40px;
         letter-spacing: 0.05em;
         width: 80%;
     }
-
 }
 
 
 /* RESPONSIVIDADE CELULAR */
 
-
-@media (max-width: 767px){
-
-    body{
-        grid-template-rows: 54px 1fr 48px;
-    }
+@media (max-width: 767px) {
     
+    body {
+        grid-template-rows: 54px 1fr 48px;
+    
+    }
     /* ESTILIZAÇÃO DO HEADER */
-
-    header{
+    
+    header {
         padding: 25px 12px 0 12px;
     }
 
     /* REMOÇÃO DOS ÍCONES */
 
-    .icons{
+    .icons {
         display: none;
     }
 
     /* ESTILIZAÇÃO LOGO */
 
-    h1{
-        font-size: 12px;
+    h1 {
+        font-size: 0.75rem;
     }
 
     /* ESTILIZAÇÃO FUNDO */
 
-    img[alt~=background]{
+    img[alt~=background] {
         width: 200px;
     }
 
     /* ESTILIZAÇÃO SALADA */
 
-    img[alt~=salad]{
+    img[alt~=salad] {
         width: 12.5em;
     }
 
     /* ESTILIZAÇÃO BOTÃO SUPERIOR */
 
-    #button__top{
-        width: 84px;
-        height: 22px;
-        font-size: 10px;
+    #button__top {
+        width: 94px;
+        height: 28px;
+        font-size: 0.75rem;
         border-radius: 5px;
         line-height: 10px;
     }
 
-    #button_top:hover{
-        transform: scale(0);
+    #button_top:hover {
+        transform: scale(1.1);
     }
 
     /* ESTILIZAÇÃO BARRA DE NAVEGAÇÃO */
 
-    .information__container{
+    .information__container {
         gap: 12px;
         padding-right: 0;
     }
 
-    .navbar{
+    .navbar {
         gap: 6px;
     }
 
-    .barra{
+    .barra {
         background-color: white;
         width: 24px;
         height: 2px;
@@ -404,33 +416,32 @@ footer{
 
     /* ESTILIZAÇÃO TÍTULO E SUBTÍTULO */
 
-    .headline{
+    .headline {
         text-align: center;
-        font-size: 22px;
+        font-size: 1.38rem;
         line-height: 40px;
     }
 
-    main{
+    main {
         width: 90%;
         place-self: center center;
         gap: 10px;
     }
 
-    .subtitle{
+    .subtitle {
         display: none;
     }
 
     /* ESTILIZAÇÃO BOTÕES */
 
-    .buttons{
+    .buttons {
         flex-direction: column;
-        gap: 12px; 
+        gap: 12px;
     }
 
-    .button{
+    .button {
         width: 248px;
         height: 50px;
         border-radius: 10px;
     }
-
 }

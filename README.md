@@ -8,4 +8,4 @@
 
 > https://www.figma.com/file/a1FfI7po2yVt36FOM8gPpS/Brazilian-Coffee?node-id=0%3A1&t=n3ZeLYBDghSP606l-1
 
-## O projeto ainda está finalizado! 🥗
+## O projeto está finalizado! 🥗
